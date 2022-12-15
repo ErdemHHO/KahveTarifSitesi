@@ -1,0 +1,22 @@
+
+
+
+<div class="container">
+    <div class="row">
+    <%  kahveAra.forEach(kahve => { %>
+    <div class="col-lg-4 text-center">
+        <div class="menu-wrap">
+            <a href="/kahve/<%= kahve.dataValues.kahve_id %>" class="menu-img img mb-4">
+            <img src="../file/<%= kahve.dataValues.kahveFoto %> " alt="" height="275px" width="350px">
+            </a>
+            <div class="text">
+                <h3><a href="/kahve/<%= kahve.dataValues.kahve_id %>" class="text-decoration-none"><%= kahve.dataValues.kahveAdi %> </a></h3>
+                <p><a href="/kahve/<%= kahve.dataValues.kahve_id %>" class="btn btn-primary btn-outline-primary">Tarife Git</a></p>
+            </div>
+        </div>
+    </div>        
+    <% }) %>
+    </div>
+</div>
+
+<script src="https://cdn.ckeditor.com/ckeditor5/35.4.0/classic/ckeditor.js"></script>
